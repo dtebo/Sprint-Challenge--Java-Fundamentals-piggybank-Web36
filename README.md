@@ -56,7 +56,7 @@ Be prepared to demonstrate your understanding of this week's concepts by answeri
       - [x] update your POM.XML so H2 will work
       - [x] update the applications.properties configuration file
       - [x] add the data.sql file
-      - [ ] create the necessary packages (at least 3 are needed) and classes
+      - [x] create the necessary packages (at least 3 are needed) and classes
 - [ ] Create a model Coin to represent the table for the piggy bank
   - Each row in the table contains: (use the provided data.sql as a guide)
     - The number of coins in this group
