@@ -9,19 +9,19 @@ public class Coin {
     @GeneratedValue(strategy = GenerationType.AUTO)
     private long coinid;
 
-    private int countcount;
-    private int facevalue;
+    private int quantity;
+    private double value;
     private String name;
-    private String pluralname;
+    private String nameplural;
 
     public Coin() {
     }
 
-    public Coin(int countcount, int facevalue, String name, String pluralname) {
-        this.countcount = countcount;
-        this.facevalue = facevalue;
+    public Coin(int quantity, double value, String name, String nameplural) {
+        this.quantity = quantity;
+        this.value = value;
         this.name = name;
-        this.pluralname = pluralname;
+        this.nameplural = nameplural;
     }
 
     public long getCoinid() {
@@ -32,20 +32,20 @@ public class Coin {
         this.coinid = coinid;
     }
 
-    public int getCountcount() {
-        return countcount;
+    public int getQuantity() {
+        return quantity;
     }
 
-    public void setCountcount(int countcount) {
-        this.countcount = countcount;
+    public void setQuantity(int quantity) {
+        this.quantity = quantity;
     }
 
-    public int getFacevalue() {
-        return facevalue;
+    public double getValue() {
+        return value;
     }
 
-    public void setFacevalue(int facevalue) {
-        this.facevalue = facevalue;
+    public void setValue(double value) {
+        this.value = value;
     }
 
     public String getName() {
@@ -56,22 +56,22 @@ public class Coin {
         this.name = name;
     }
 
-    public String getPluralname() {
-        return pluralname;
+    public String getNameplural() {
+        return nameplural;
     }
 
-    public void setPluralname(String pluralname) {
-        this.pluralname = pluralname;
+    public void setNameplural(String nameplural) {
+        this.nameplural = nameplural;
     }
 
     @Override
     public String toString() {
         return "Coin{" +
                 "coinid=" + coinid +
-                ", countcount=" + countcount +
-                ", facevalue=" + facevalue +
+                ", quantity=" + quantity +
+                ", value=" + value +
                 ", name='" + name + '\'' +
-                ", pluralname='" + pluralname + '\'' +
+                ", nameplural='" + nameplural + '\'' +
                 '}';
     }
 }

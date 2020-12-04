@@ -21,6 +21,16 @@ public class CoinController {
         List<Coin> myCoins = new ArrayList<>();
         coinRepository.findAll().iterator().forEachRemaining(myCoins::add);
 
-        return new ResponseEntity<>(myCoins, HttpStatus.OK);
+        double total = 0.0;
+        String coinString = "";
+        for(Coin c : myCoins){
+            total += c.getValue() * c.getQuantity();
+            coinString += c.getQuantity() + " " + (c.getQuantity() > 1 ? c.getNameplural() : c.getName()) + "\n";
+        }
+
+        coinString += "The piggy bank holds " + total;
+        System.out.println(coinString);
+
+        return new ResponseEntity<>(total, HttpStatus.OK);
     }
 }
