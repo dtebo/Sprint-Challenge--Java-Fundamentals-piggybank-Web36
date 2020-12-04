@@ -23,9 +23,22 @@ Commit your code regularly and meaningfully. This helps both you (in case you ev
 Be prepared to demonstrate your understanding of this week's concepts by answering questions on the following topics. You might prepare by writing down your own answers before hand.
 
 1. Explain how you took advantage of Java's Object Oriented approach to solve the sprint challenge.
+
+A. I built a repository interface that inherited from the built-in CrudRepository interface, so that I could make use of the standard crud operations to manipulate the data. I built a model/entity class as a blueprint for the data structure in the database. Then, I build a controller class that took requests from the client and returned the appropriate response based on the endpoint.
+
 2. Explain the three steps needed to run a Java application (using the JDK) including what each step does and how those step correlate to running a JavaScript application.
+
+A. The first step is to use the javac command to compile the source code into bytecode.
+   The second step is to run the jar command to package the bytecode into an executable jar file.
+   The third command is to run the java -jar command to run the application.
+
 3. Explain how Java being a strongly typed language affected you solution.
+
+A. Because Java is a strongly typed language, I had to be careful to ensure that I chose the correct data types for my variables based on what type of data that I needed to store.
+
 4. Can you explain the differences between Abstract Classes and Interfaces including how they are used in your application?
+
+A. Abstract classes allow you to define methods in them instead of just declaring them. Abstract classes also allow you to define fields. Interfaces don't allow you to do either of these things. They only allow you to define the methods that subclasses will have to implement.
 
 ## Instructions
 
